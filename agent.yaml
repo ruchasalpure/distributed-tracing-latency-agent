@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: distributed-tracing-latency-agent
+version: 1.0.0
+description: Ingests opentelemetry trace spans to pinpoint tail-latency bottlenecks, microservice fan-out anti-patterns, and cascading network timeouts.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - otel-span-analysis
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - devtools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/distributed-tracing-latency-agent"
